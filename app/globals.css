@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body { height: 100%; }
+body { background: #F6F7F9; color: #181B21; -webkit-font-smoothing: antialiased; }
+.tabular { font-variant-numeric: tabular-nums; }
+input[type="date"] { color-scheme: light; }
+
+@layer components {
+  .chip { @apply inline-block text-[11px] font-semibold px-[9px] py-[3px] rounded-full; }
+  .chip-g { @apply bg-okbg text-ok; }
+  .chip-w { @apply bg-warnbg text-warn; }
+  .chip-c { @apply bg-badbg text-bad; }
+}
